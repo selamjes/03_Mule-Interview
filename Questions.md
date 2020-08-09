@@ -1,18 +1,11 @@
 
 
 
-3. RAML?
--stands for restful api modeling launguage
-- it containes end point url,request/response,http methods, query & uri parameters.
--raml can also used for documentation purpose
--it help for the client to know (a consumer of service) know what the service is and what how all operations can be invoked.
 
-4. trait?
-it used to define commen attributs for http method which is get, post, put, delete
-5. dataType?
-- allow the user to define objects and reuse them at any level in a RAML file.
-6. security scheme
--security that would be used to secure the api and it its method.
+
+
+
+
 7. resourceType
 -It basically focuses on describing your API resources, methods, parameters, media type etc.
 8. Error handling
