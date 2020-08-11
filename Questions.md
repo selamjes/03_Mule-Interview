@@ -1,12 +1,12 @@
 1. mulesoft
 - mule soft provides integration platform,  its light weight but highly scalable. also its Java based. Mule enables the reuse of component
 
-2. ESB? the run time engine of anypoint platform
-- (enterprise service bus) and integration platform.it helps for devloper can
- connect ther application with esb.including jms,web service,http etc
-
+2. ESB? 
+Mule ESB is a Java-based enterprise service bus (ESB) and integration platform,developer can connect their application with ESB
+-  Apart from of the different technologies the applications use, including
+JMS, Web Services, SMTP, HTTP
 3. RAML?
--stands for restful api modeling launguage
+-stands for restful api modeling launguage and for discribe your API. its yaml based. it can be easily readable by human and computer.
 - it containes end point url,request/response,http methods, query & uri parameters.
 -raml can also used for documentation purpose
 -it help for the client to know (a consumer of service) know what the service is and what how all operations can be invoked.
@@ -37,18 +37,18 @@ error handling mechanisms
 	3. try catch scope - we can put our component in the try block.
 -
 9. Munit
--MUnit is a Mule Application Testing Framework that allows you to easily build automated tests for your Integration and APIs.
+- MUnit is a Mule Application Testing Framework to test our flows. authomated test and inte
 
 10. Domian
 - implemented to configure the resources that are shared among different projects.
 - Domain Project is used to create shared resources, which can reuse across other projects who are referring to domain projects
 
 11. API
-- (Application Programming Interface)which is a software intermediary that allows two applications to talk to each other
+- (Application Programming Interface)which is a software intermediary that allows two applications to talk to each other.  that help to communicate server side and client side. 
 
 12. API led conectivity
-- It is an integration approach for connecting and exposing assets through reusable and purposeful APIs.
-three types of API. system API, Process API Experienced API.
+- It is an approach for connecting and exposing assets through reusable and purposeful APIs.
+three types of API. system API, Process API Experience API.
 -Drive outcomes with Api led connectivity
 . on time and within budget
 . drives rules vs build
@@ -72,19 +72,22 @@ or to open a connection to an API deployed to another runtime
 - flow both synchronous and a synchronous, with resource, it has error handling 
 - sub flow:is always synchronous, no error handling 
 - a synchronous flow: same as subflow the only differece 
-- synchronous flow:
+- private flow
 
 16. DataWeave
--. DataWeave is a MuleSoft tool for accessing and transforming data.
+- DataWeave is a MuleSoft tool for accessing and transforming data.
+
 17. tramsformer
--are simple objects that convert the current message from one type to another.
+- A transformer takes care of translating the content of a message from one form to another
+- are simple objects that convert the current message from one type to another.
 
 18. API life cycle:  
 -
 19. Router in Mule
 -Routers (Flow Controls in Anypoint Studio) 
 
-20. Api kit router 
+20. Api kit router based on our raml and based on resource and method trigger our flows
+
 
 21. Endpoint in Mule
 An endpoint is a flow-level element that is configured to receive and/or send messages from and/or to external resources. 
@@ -92,13 +95,37 @@ An endpoint is a flow-level element that is configured to receive and/or send me
 22. scatter Gather
 -is a routing message processor in Mule ESB runtime that sends a request message to multiple targets concurrently.
  
-23. choice
+23. choice if/else condition
 
 24. 
 25. secure Properties
+
+26. RESTful  it is a Web Services. standard http method. 
+stateless
+cachable
+http method 
 -
-Batch
--
+27.  SOAP Web Service?
+- SOAP stands for Simple Object Access Protocol. It is  XML-based protocol
+for accessing web services.
+-  SOAP web services can be written in any programming language and executed in any platform.
+- WSDL dependent: SOAP uses WSDL and doesn’t have any other mechanism to
+discover the service.
+
+What is the difference between SOAP and REST?
+SOAP -> REST
+1. SOAP is a protocol. -> REST is an architectural style.
+2. SOAP stands for Simple Object Access Protocol. -> REST stands for
+REpresentational State Transfer.
+3. SOAP can’t use REST because it is a protocol. -> REST can use SOAP web services
+because it is a concept and can use any protocol like HTTP, SOAP
+
+* webservice is allows two software system to exchange data over the internet
+
+28. Batch
+- Batch processing is a technique for automating and processing multiple transactions as a single group. Batch processing helps in handling tasks like payroll, end-of-month reconciliation, or settling trades overnight.
+- Batch jobs split large messages into records which Mule processes asynchronously,just as flows process messages, batch jobs process records.
+
 File
 -
 Email
@@ -111,6 +138,11 @@ salesforce
 caching
 -
 
+mule event is nithing a logical 
+a. message - payload - body
+		- attributes - header
+b. variable
 
+dependencies
 
 
